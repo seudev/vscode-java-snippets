@@ -1,0 +1,52 @@
+{
+	"Return": {
+		"prefix": [
+			"r",
+			"return"
+		],
+		"body": [
+			"return $0;"
+		],
+		"description": "A return"
+	},
+	"Return null": {
+		"prefix": [
+			"rn",
+			"return"
+		],
+		"body": [
+			"return null;"
+		],
+		"description": "A return null"
+	},
+	"Return true": {
+		"prefix": [
+			"rt",
+			"return"
+		],
+		"body": [
+			"return true;"
+		],
+		"description": "A return true"
+	},
+	"Return false": {
+		"prefix": [
+			"rf",
+			"return"
+		],
+		"body": [
+			"return false;"
+		],
+		"description": "A return false"
+	},
+	"Return this": {
+		"prefix": [
+			"rth",
+			"return"
+		],
+		"body": [
+			"return this;"
+		],
+		"description": "A return this"
+	}
+}

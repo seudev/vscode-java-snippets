@@ -1,0 +1,51 @@
+{
+	"Variable": {
+		"prefix": [
+			"v",
+			"var"
+		],
+		"body": [
+			"${1| ,String,int,Integer,long,Long,float,Float,double,Double,boolean,Boolean,short,Short,byte,Byte,char,Character,BigDecimal,StringBuilder,LocalDate,LocalDateTime,ZonedDateTime,LocalTime,Instant,YearMonth,Month,Year,MonthDay,DayOfWeek,Period,Duration,Date,Class<?>,Object,Object[],Consumer<>,BiConsumer<>,Predicate<>,BiPredicate<>,Function<>,BiFunction<>,Supplier<>,Optional<>,List<>,Set<>,Map<>,Collection<>,Stream<>|} ${2:varName};",
+			"$0"
+		],
+		"description": "A local variable"
+	},
+	"Variable = value": {
+		"prefix": [
+			"vv",
+			"var",
+			"varv"
+		],
+		"body": [
+			"${1| ,String,int,Integer,long,Long,float,Float,double,Double,boolean,Boolean,short,Short,byte,Byte,char,Character,BigDecimal,StringBuilder,LocalDate,LocalDateTime,ZonedDateTime,LocalTime,Instant,YearMonth,Month,Year,MonthDay,DayOfWeek,Period,Duration,Date,Class<?>,Object,Object[],Consumer<>,BiConsumer<>,Predicate<>,BiPredicate<>,Function<>,BiFunction<>,Supplier<>,Optional<>,List<>,Set<>,Map<>,Collection<>,Stream<>|} ${2:varName} = ${3:defaultValue};",
+			"$0"
+		],
+		"description": "A local variable"
+	},
+	"Variable = StringBuilder": {
+		"prefix": [
+			"vsb",
+			"var",
+			"varsb"
+		],
+		"body": [
+			"String ${1:varName} = new StringBuilder()",
+			"\t$0",
+			"\t.toString();"
+		],
+		"description": "A local string variable from StringBuilder"
+	},
+	"String builder": {
+		"prefix": [
+			"sb",
+			"stringb",
+			"sbuilder"
+		],
+		"body": [
+			"StringBuilder ${1:builder} = new StringBuilder()",
+			"\t$0",
+			"\t.toString();"
+		],
+		"description": "A local StringBuilder variable"
+	}
+}

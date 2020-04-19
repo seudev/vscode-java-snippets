@@ -1,0 +1,154 @@
+{
+	"class": {
+		"prefix": [
+			"c",
+			"class"
+		],
+		"body": [
+			"public class ${1:$TM_FILENAME_BASE} {",
+			"",
+			"\t$0",
+			"",
+			"}"
+		],
+		"description": "A class"
+	},
+	"Static class": {
+		"prefix": [
+			"sc",
+			"class",
+			"sclass"
+		],
+		"body": [
+			"public static class ${1:$TM_FILENAME_BASE} {",
+			"",
+			"\t$0",
+			"",
+			"}"
+		],
+		"description": "A static class"
+	},
+	"Interface": {
+		"prefix": [
+			"i",
+			"interface"
+		],
+		"body": [
+			"public interface ${1:$TM_FILENAME_BASE} {",
+			"",
+			"\t$0",
+			"",
+			"}"
+		],
+		"description": "An interface"
+	},
+	"Functional interface": {
+		"prefix": [
+			"fi",
+			"finterface",
+			"interface"
+		],
+		"body": [
+			"@FunctionalInterface",
+			"public interface ${1:$TM_FILENAME_BASE} {",
+			"",
+			"\t$0",
+			"",
+			"}"
+		],
+		"description": "An interface"
+	},
+	"Enum": {
+		"prefix": [
+			"e",
+			"enum"
+		],
+		"body": [
+			"public enum ${1:$TM_FILENAME_BASE} {",
+			"",
+			"\t$0",
+			"",
+			"}"
+		],
+		"description": "An enum"
+	},
+	"Annotation": {
+		"prefix": [
+			"a",
+			"annotation"
+		],
+		"body": [
+			"import static java.lang.annotation.ElementType.ANNOTATION_TYPE;",
+			"import static java.lang.annotation.ElementType.FIELD;",
+			"import static java.lang.annotation.ElementType.METHOD;",
+			"import static java.lang.annotation.ElementType.PARAMETER;",
+			"import static java.lang.annotation.ElementType.TYPE;",
+			"import static java.lang.annotation.RetentionPolicy.RUNTIME;",
+			"",
+			"import java.lang.annotation.Documented;",
+			"import java.lang.annotation.Repeatable;",
+			"import java.lang.annotation.Retention;",
+			"import java.lang.annotation.Target;",
+			"",
+			"@Documented",
+			"@Retention(RUNTIME)",
+			"@Target({FIELD, METHOD, PARAMETER, ANNOTATION_TYPE, TYPE})",
+			"public @interface ${1:$TM_FILENAME_BASE} {",
+			"",
+			"\t$0",
+			"",
+			"}"
+		],
+		"description": "An annotation"
+	},
+	"Repetable annotation": {
+		"prefix": [
+			"ra",
+			"annotation",
+			"rannotation"
+		],
+		"body": [
+			"import static java.lang.annotation.ElementType.ANNOTATION_TYPE;",
+			"import static java.lang.annotation.ElementType.FIELD;",
+			"import static java.lang.annotation.ElementType.METHOD;",
+			"import static java.lang.annotation.ElementType.PARAMETER;",
+			"import static java.lang.annotation.ElementType.TYPE;",
+			"import static java.lang.annotation.RetentionPolicy.RUNTIME;",
+			"",
+			"import java.lang.annotation.Documented;",
+			"import java.lang.annotation.Repeatable;",
+			"import java.lang.annotation.Retention;",
+			"import java.lang.annotation.Target;",
+			"",
+			"@Documented",
+			"@Retention(RUNTIME)",
+			"@Repeatable(${1:$TM_FILENAME_BASE}List.class)",
+			"@Target({FIELD, METHOD, PARAMETER, ANNOTATION_TYPE, TYPE})",
+			"public @interface $1 {",
+			"",
+			"\t$0",
+			"",
+			"\t@Documented",
+			"\t@Retention(RUNTIME)",
+			"\t@Target({FIELD, METHOD, PARAMETER, ANNOTATION_TYPE, TYPE})",
+			"\tpublic @interface List {",
+			"",
+			"\t\t$1[] value();",
+			"",
+			"\t}",
+			"",
+			"}"
+		],
+		"description": "A repetable annotation"
+	},
+	"Type": {
+		"prefix": [
+			"t",
+			"type"
+		],
+		"body": [
+			"${1|Void,String,int,Integer,long,Long,float,Float,double,Double,boolean,Boolean,short,Short,byte,Byte,char,Character,BigDecimal,StringBuilder,LocalDate,LocalDateTime,ZonedDateTime,LocalTime,Instant,YearMonth,Month,Year,MonthDay,DayOfWeek,Period,Duration,Date,Class<?>,Object,Object[],Consumer<>,BiConsumer<>,Predicate<>,BiPredicate<>,Function<>,BiFunction<>,Supplier<>,Optional<>,List<>,Set<>,Map<>,Collection<>,Stream<>|}"
+		],
+		"description": "A type"
+	}
+}

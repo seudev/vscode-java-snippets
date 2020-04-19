@@ -1,0 +1,212 @@
+{
+	"If statement": {
+		"prefix": [
+			"if"
+		],
+		"body": [
+			"if ($1) {",
+			"\t$0",
+			"}"
+		],
+		"description": "An if statement"
+	},
+	"If null statement": {
+		"prefix": [
+			"ifn"
+		],
+		"body": [
+			"if (${1:varName} == null) {",
+			"\t$0",
+			"}"
+		],
+		"description": "An if null statement"
+	},
+	"If not null statement": {
+		"prefix": [
+			"ifnn"
+		],
+		"body": [
+			"if (${1:varName} != null) {",
+			"\t$0",
+			"}"
+		],
+		"description": "An if not null statement"
+	},
+	"If instanceof statement": {
+		"prefix": [
+			"ifi"
+		],
+		"body": [
+			"if (${1:varName} instanceof ${2:$TM_FILENAME_BASE}) {",
+			"\t$0",
+			"}"
+		],
+		"description": "An if instanceof statement"
+	},
+	"If instanceof statement then cast": {
+		"prefix": [
+			"ific"
+		],
+		"body": [
+			"if (${1:varName} instanceof ${2:$TM_FILENAME_BASE}) {",
+			"\t$2 ${3:varName2} = ($2) $1;",
+			"\t$0",
+			"}"
+		],
+		"description": "An if instanceof statement then cast"
+	},
+	"If not instanceof statement": {
+		"prefix": [
+			"ifni"
+		],
+		"body": [
+			"if (!(${1:varName} instanceof ${2:$TM_FILENAME_BASE})) {",
+			"\t$0",
+			"}"
+		],
+		"description": "An if not instanceof statement"
+	},
+	"If empty statement": {
+		"prefix": [
+			"ife"
+		],
+		"body": [
+			"if (${1:varName}.isEmpty()) {",
+			"\t$0",
+			"}"
+		],
+		"description": "An if empty statement"
+	},
+	"If not empty statement": {
+		"prefix": [
+			"ifne"
+		],
+		"body": [
+			"if (!${1:varName}.isEmpty()) {",
+			"\t$0",
+			"}"
+		],
+		"description": "An if not empty statement"
+	},
+	"If not null and not empty statement": {
+		"prefix": [
+			"ifnne"
+		],
+		"body": [
+			"if ((${1:varName} != null) && !${1:varName}.isEmpty()) {",
+			"\t$0",
+			"}"
+		],
+		"description": "An if not null and not empty statement"
+	},
+	"If null or empty statement": {
+		"prefix": [
+			"ifnoe"
+		],
+		"body": [
+			"if ((${1:varName} == null) || ${1:varName}.isEmpty()) {",
+			"\t$0",
+			"}"
+		],
+		"description": "An if null or empty statement"
+	},
+	"If null or condition statement": {
+		"prefix": [
+			"ifno"
+		],
+		"body": [
+			"if ((${1:varName} == null) || ($2)) {",
+			"\t$0",
+			"}"
+		],
+		"description": "An if null or condition statement"
+	},
+	"If not null and condition statement": {
+		"prefix": [
+			"ifnna"
+		],
+		"body": [
+			"if ((${1:varName} != null) && ($2)) {",
+			"\t$0",
+			"}"
+		],
+		"description": "An if not null and condition statement"
+	},
+	"If ternary statement": {
+		"prefix": [
+			"ift"
+		],
+		"body": [
+			"(($1) ? $2 : $3)$0"
+		],
+		"description": "An if ternary statement"
+	},
+	"If null ternary statement": {
+		"prefix": [
+			"iftn"
+		],
+		"body": [
+			"((${1:varName} == null) ? $2 : $3)$0"
+		],
+		"description": "An if null ternary statement"
+	},
+	"If not null ternary statement": {
+		"prefix": [
+			"iftnn"
+		],
+		"body": [
+			"((${1:varName} != null) ? $2 : $3)$0"
+		],
+		"description": "An if not null ternary statement"
+	},
+	"Else statement": {
+		"prefix": [
+			"else"
+		],
+		"body": [
+			"else {",
+			"\t$0",
+			"}"
+		],
+		"description": "An else statement"
+	},
+	"Switch statement": {
+		"prefix": [
+			"sw",
+			"switch"
+		],
+		"body": [
+			"switch (${1:varName}) {",
+			"\tcase ${2:value}:",
+			"\t\t$0",
+			"\t\tbreak;",
+			"\tdefault:",
+			"\t\tbreak;",
+			"}"
+		],
+		"description": "A switch statement"
+	},
+	"Case break statement": {
+		"prefix": [
+			"cb",
+			"case"
+		],
+		"body": [
+			"case ${1:value}:",
+			"\t$0",
+			"\tbreak;"
+		],
+		"description": "A case break statement"
+	},
+	"Case return statement": {
+		"prefix": [
+			"cr",
+			"case"
+		],
+		"body": [
+			"case ${1:value}:",
+			"\treturn $0;"
+		],
+		"description": "A case return statement"
+	}
+}

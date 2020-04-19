@@ -1,0 +1,85 @@
+{
+	"New": {
+		"prefix": [
+			"n",
+			"new"
+		],
+		"body": [
+			"new ${1:Object}($0)"
+		],
+		"description": "A new instance"
+	},
+	"Cast": {
+		"prefix": [
+			"cast"
+		],
+		"body": [
+			"${1| ,String,int,Integer,long,Long,float,Float,double,Double,boolean,Boolean,short,Short,byte,Byte,char,Character,BigDecimal,StringBuilder,LocalDate,LocalDateTime,ZonedDateTime,LocalTime,Instant,YearMonth,Month,Year,MonthDay,DayOfWeek,Period,Duration,Date,Class<?>,Object,Object[],Consumer<>,BiConsumer<>,Predicate<>,BiPredicate<>,Function<>,BiFunction<>,Supplier<>,Optional<>,List<>,Set<>,Map<>,Collection<>,Stream<>|} ${2:varName} = ($1) ${3:obj};",
+			"$0"
+		],
+		"description": "Cast a object"
+	},
+	"Equals than": {
+		"prefix": [
+			"eq"
+		],
+		"body": [
+			"Objects.equals(${2:value1}, ${1:value2})$0"
+		],
+		"description": "null-safe equals than"
+	},
+	"Equals than member": {
+		"prefix": [
+			"eqm"
+		],
+		"body": [
+			"Objects.equals(${1:this}.${2:fieldOrMethod}, ${3:o}.$2)$0"
+		],
+		"description": "null-safe equals than member"
+	},
+	"Equals method": {
+		"prefix": [
+			"em",
+			"equals"
+		],
+		"body": [
+			"@Override",
+			"public boolean equals(Object obj) {",
+			"\tif (this == obj) {",
+			"\t\treturn true;",
+			"\t}",
+			"\tif (obj instanceof ${1:$TM_FILENAME_BASE}) {",
+			"\t\t$1 ${2:o} = ($1) obj;",
+			"",
+			"\t\treturn ${3:Objects.equals(this.getId(), $2.getId())}$0;",
+			"\t}",
+			"\treturn false;",
+			"}",
+			""
+		],
+		"description": "An equals method"
+	},
+	"Hashcode method": {
+		"prefix": [
+			"hm",
+			"hashcode"
+		],
+		"body": [
+			"@Override",
+			"public int hashCode() {",
+			"\treturn Objects.hashCode(${1:getId()});",
+			"}",
+			"$0"
+		],
+		"description": "A hashcode method"
+	},
+	"@Override": {
+		"prefix": [
+			"@o"
+		],
+		"body": [
+			"@Override"
+		],
+		"description": "A @Override annotation"
+	}
+}

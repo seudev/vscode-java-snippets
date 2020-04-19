@@ -1,0 +1,98 @@
+{
+	"Main method": {
+		"prefix": [
+			"psvm",
+			"main"
+		],
+		"body": [
+			"public static void main(String[] args) {",
+			"\t$0",
+			"}",
+			""
+		],
+		"description": "A main method"
+	},
+	"Method": {
+		"prefix": [
+			"m",
+			"method"
+		],
+		"body": [
+			"${1|private,public,protected, |}${2| , void, String, int, Integer, long, Long, float, Float, double, Double, boolean, Boolean, short, Short, byte, Byte, char, Character, BigDecimal, StringBuilder, LocalDate, LocalDateTime, ZonedDateTime, LocalTime, Instant, YearMonth, Month, Year, MonthDay, DayOfWeek, Period, Duration, Date, Class<?>, Object, Object[], Consumer<>, BiConsumer<>, Predicate<>, BiPredicate<>, Function<>, BiFunction<>, Supplier<>, Optional<>, List<>, Set<>, Map<>, Collection<>, Stream<>|} ${3:methodName}($4) {",
+			"\t$0",
+			"}",
+			""
+		],
+		"description": "A method"
+	},
+	"Static method": {
+		"prefix": [
+			"sm",
+			"method",
+			"smethod"
+		],
+		"body": [
+			"${1|private,public,protected, |} static${2| , void, String, int, Integer, long, Long, float, Float, double, Double, boolean, Boolean, short, Short, byte, Byte, char, Character, BigDecimal, StringBuilder, LocalDate, LocalDateTime, ZonedDateTime, LocalTime, Instant, YearMonth, Month, Year, MonthDay, DayOfWeek, Period, Duration, Date, Class<?>, Object, Object[], Consumer<>, BiConsumer<>, Predicate<>, BiPredicate<>, Function<>, BiFunction<>, Supplier<>, Optional<>, List<>, Set<>, Map<>, Collection<>, Stream<>|} ${3:methodName}($4) {",
+			"\t$0",
+			"}",
+			""
+		],
+		"description": "A static method"
+	},
+	"Private method": {
+		"prefix": [
+			"pm",
+			"method",
+			"pmethod"
+		],
+		"body": [
+			"private${2| , void, String, int, Integer, long, Long, float, Float, double, Double, boolean, Boolean, short, Short, byte, Byte, char, Character, BigDecimal, StringBuilder, LocalDate, LocalDateTime, ZonedDateTime, LocalTime, Instant, YearMonth, Month, Year, MonthDay, DayOfWeek, Period, Duration, Date, Class<?>, Object, Object[], Consumer<>, BiConsumer<>, Predicate<>, BiPredicate<>, Function<>, BiFunction<>, Supplier<>, Optional<>, List<>, Set<>, Map<>, Collection<>, Stream<>|} ${3:methodName}($4) {",
+			"\t$0",
+			"}",
+			""
+		],
+		"description": "A private method"
+	},
+	"Private static method": {
+		"prefix": [
+			"psm",
+			"method",
+			"psmethod"
+		],
+		"body": [
+			"private static${2| , void, String, int, Integer, long, Long, float, Float, double, Double, boolean, Boolean, short, Short, byte, Byte, char, Character, BigDecimal, StringBuilder, LocalDate, LocalDateTime, ZonedDateTime, LocalTime, Instant, YearMonth, Month, Year, MonthDay, DayOfWeek, Period, Duration, Date, Class<?>, Object, Object[], Consumer<>, BiConsumer<>, Predicate<>, BiPredicate<>, Function<>, BiFunction<>, Supplier<>, Optional<>, List<>, Set<>, Map<>, Collection<>, Stream<>|} ${3:methodName}($4) {",
+			"\t$0",
+			"}",
+			""
+		],
+		"description": "A private static method"
+	},
+	"Public method": {
+		"prefix": [
+			"Pm",
+			"method",
+			"Pmethod"
+		],
+		"body": [
+			"public${2| , void, String, int, Integer, long, Long, float, Float, double, Double, boolean, Boolean, short, Short, byte, Byte, char, Character, BigDecimal, StringBuilder, LocalDate, LocalDateTime, ZonedDateTime, LocalTime, Instant, YearMonth, Month, Year, MonthDay, DayOfWeek, Period, Duration, Date, Class<?>, Object, Object[], Consumer<>, BiConsumer<>, Predicate<>, BiPredicate<>, Function<>, BiFunction<>, Supplier<>, Optional<>, List<>, Set<>, Map<>, Collection<>, Stream<>|} ${3:methodName}($4) {",
+			"\t$0",
+			"}",
+			""
+		],
+		"description": "A public method"
+	},
+	"Public static method": {
+		"prefix": [
+			"Psm",
+			"method",
+			"Psmethod"
+		],
+		"body": [
+			"public static${2| , void, String, int, Integer, long, Long, float, Float, double, Double, boolean, Boolean, short, Short, byte, Byte, char, Character, BigDecimal, StringBuilder, LocalDate, LocalDateTime, ZonedDateTime, LocalTime, Instant, YearMonth, Month, Year, MonthDay, DayOfWeek, Period, Duration, Date, Class<?>, Object, Object[], Consumer<>, BiConsumer<>, Predicate<>, BiPredicate<>, Function<>, BiFunction<>, Supplier<>, Optional<>, List<>, Set<>, Map<>, Collection<>, Stream<>|} ${3:methodName}($4) {",
+			"\t$0",
+			"}",
+			""
+		],
+		"description": "A public static method"
+	}
+}

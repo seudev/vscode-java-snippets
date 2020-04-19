@@ -1,0 +1,222 @@
+{
+	"abstract keyword": {
+		"prefix": "abstract",
+		"body": "abstract",
+		"description": "abstract keyword"
+	},
+	"continue keyword": {
+		"prefix": "continue",
+		"body": "continue",
+		"description": "continue keyword"
+	},
+	"switch keyword": {
+		"prefix": "switch",
+		"body": "switch",
+		"description": "switch keyword"
+	},
+	"assert keyword": {
+		"prefix": "assert",
+		"body": "assert",
+		"description": "assert keyword"
+	},
+	"default keyword": {
+		"prefix": "default",
+		"body": "default",
+		"description": "default keyword"
+	},
+	"package keyword": {
+		"prefix": "package",
+		"body": "package",
+		"description": "package keyword"
+	},
+	"synchronized keyword": {
+		"prefix": "synchronized",
+		"body": "synchronized",
+		"description": "synchronized keyword"
+	},
+	"boolean keyword": {
+		"prefix": "boolean",
+		"body": "boolean",
+		"description": "boolean keyword"
+	},
+	"private keyword": {
+		"prefix": "private",
+		"body": "private",
+		"description": "private keyword"
+	},
+	"this keyword": {
+		"prefix": "this",
+		"body": "this",
+		"description": "this keyword"
+	},
+	"break keyword": {
+		"prefix": "break",
+		"body": "break",
+		"description": "break keyword"
+	},
+	"double keyword": {
+		"prefix": "double",
+		"body": "double",
+		"description": "double keyword"
+	},
+	"implements keyword": {
+		"prefix": "implements",
+		"body": "implements",
+		"description": "implements keyword"
+	},
+	"protected keyword": {
+		"prefix": "protected",
+		"body": "protected",
+		"description": "protected keyword"
+	},
+	"throw keyword": {
+		"prefix": "throw",
+		"body": "throw",
+		"description": "throw keyword"
+	},
+	"byte keyword": {
+		"prefix": "byte",
+		"body": "byte",
+		"description": "byte keyword"
+	},
+	"else keyword": {
+		"prefix": "else",
+		"body": "else",
+		"description": "else keyword"
+	},
+	"import keyword": {
+		"prefix": "import",
+		"body": "import",
+		"description": "import keyword"
+	},
+	"public keyword": {
+		"prefix": "public",
+		"body": "public",
+		"description": "public keyword"
+	},
+	"throws keyword": {
+		"prefix": "throws",
+		"body": "throws",
+		"description": "throws keyword"
+	},
+	"case keyword": {
+		"prefix": "case",
+		"body": "case",
+		"description": "case keyword"
+	},
+	"enum keyword": {
+		"prefix": "enum",
+		"body": "enum",
+		"description": "enum keyword"
+	},
+	"instanceof keyword": {
+		"prefix": "instanceof",
+		"body": "instanceof",
+		"description": "instanceof keyword"
+	},
+	"return keyword": {
+		"prefix": "return",
+		"body": "return",
+		"description": "return keyword"
+	},
+	"transient keyword": {
+		"prefix": "transient",
+		"body": "transient",
+		"description": "transient keyword"
+	},
+	"catch keyword": {
+		"prefix": "catch",
+		"body": "catch",
+		"description": "catch keyword"
+	},
+	"extends keyword": {
+		"prefix": "extends",
+		"body": "extends",
+		"description": "extends keyword"
+	},
+	"int keyword": {
+		"prefix": "int",
+		"body": "int",
+		"description": "int keyword"
+	},
+	"short keyword": {
+		"prefix": "short",
+		"body": "short",
+		"description": "short keyword"
+	},
+	"try keyword": {
+		"prefix": "try",
+		"body": "try",
+		"description": "try keyword"
+	},
+	"char keyword": {
+		"prefix": "char",
+		"body": "char",
+		"description": "char keyword"
+	},
+	"final keyword": {
+		"prefix": "final",
+		"body": "final",
+		"description": "final keyword"
+	},
+	"interface keyword": {
+		"prefix": "interface",
+		"body": "interface",
+		"description": "interface keyword"
+	},
+	"static keyword": {
+		"prefix": "static",
+		"body": "static",
+		"description": "static keyword"
+	},
+	"void keyword": {
+		"prefix": "void",
+		"body": "void",
+		"description": "void keyword"
+	},
+	"class keyword": {
+		"prefix": "class",
+		"body": "class",
+		"description": "class keyword"
+	},
+	"finally keyword": {
+		"prefix": "finally",
+		"body": "finally",
+		"description": "finally keyword"
+	},
+	"long keyword": {
+		"prefix": "long",
+		"body": "long",
+		"description": "long keyword"
+	},
+	"strictfp keyword": {
+		"prefix": "strictfp",
+		"body": "strictfp",
+		"description": "strictfp keyword"
+	},
+	"volatile keyword": {
+		"prefix": "volatile",
+		"body": "volatile",
+		"description": "volatile keyword"
+	},
+	"float keyword": {
+		"prefix": "float",
+		"body": "float",
+		"description": "float keyword"
+	},
+	"native keyword": {
+		"prefix": "native",
+		"body": "native",
+		"description": "native keyword"
+	},
+	"super keyword": {
+		"prefix": "super",
+		"body": "super",
+		"description": "super keyword"
+	},
+	"while keyword": {
+		"prefix": "while",
+		"body": "while",
+		"description": "while keyword"
+	}
+}

@@ -1,0 +1,108 @@
+{
+	"Field": {
+		"prefix": [
+			"f",
+			"field"
+		],
+		"body": [
+			"${1|private,public,protected, |}${2| , String, int, Integer, long, Long, float, Float, double, Double, boolean, Boolean, short, Short, byte, Byte, char, Character, BigDecimal, StringBuilder, LocalDate, LocalDateTime, ZonedDateTime, LocalTime, Instant, YearMonth, Month, Year, MonthDay, DayOfWeek, Period, Duration, Date, Class<?>, Object, Object[], Consumer<>, BiConsumer<>, Predicate<>, BiPredicate<>, Function<>, BiFunction<>, Supplier<>, Optional<>, List<>, Set<>, Map<>, Collection<>, Stream<>|} ${3:fieldName};",
+			"$0"
+		],
+		"description": "A field"
+	},
+	"Final field": {
+		"prefix": [
+			"ff",
+			"field",
+			"ffield"
+		],
+		"body": [
+			"${1|private,public,protected, |} final${2| , String, int, Integer, long, Long, float, Float, double, Double, boolean, Boolean, short, Short, byte, Byte, char, Character, BigDecimal, StringBuilder, LocalDate, LocalDateTime, ZonedDateTime, LocalTime, Instant, YearMonth, Month, Year, MonthDay, DayOfWeek, Period, Duration, Date, Class<?>, Object, Object[], Consumer<>, BiConsumer<>, Predicate<>, BiPredicate<>, Function<>, BiFunction<>, Supplier<>, Optional<>, List<>, Set<>, Map<>, Collection<>, Stream<>|} ${3:fieldName};",
+			"$0"
+		],
+		"description": "A final field"
+	},
+	"Field = value": {
+		"prefix": [
+			"fv",
+			"field",
+			"fieldv"
+		],
+		"body": [
+			"${1|private,public,protected, |}${2| , String, int, Integer, long, Long, float, Float, double, Double, boolean, Boolean, short, Short, byte, Byte, char, Character, BigDecimal, StringBuilder, LocalDate, LocalDateTime, ZonedDateTime, LocalTime, Instant, YearMonth, Month, Year, MonthDay, DayOfWeek, Period, Duration, Date, Class<?>, Object, Object[], Consumer<>, BiConsumer<>, Predicate<>, BiPredicate<>, Function<>, BiFunction<>, Supplier<>, Optional<>, List<>, Set<>, Map<>, Collection<>, Stream<>|} ${3:fieldName} = ${4:defaultValue};",
+			"$0"
+		],
+		"description": "A field with default value"
+	},
+	"Final field = value": {
+		"prefix": [
+			"ffv",
+			"field",
+			"ffield",
+			"ffieldv"
+		],
+		"body": [
+			"${1|private,public,protected, |}${2| , String, int, Integer, long, Long, float, Float, double, Double, boolean, Boolean, short, Short, byte, Byte, char, Character, BigDecimal, StringBuilder, LocalDate, LocalDateTime, ZonedDateTime, LocalTime, Instant, YearMonth, Month, Year, MonthDay, DayOfWeek, Period, Duration, Date, Class<?>, Object, Object[], Consumer<>, BiConsumer<>, Predicate<>, BiPredicate<>, Function<>, BiFunction<>, Supplier<>, Optional<>, List<>, Set<>, Map<>, Collection<>, Stream<>|} ${3:fieldName} = ${4:defaultValue};",
+			"$0"
+		],
+		"description": "A final field with value"
+	},
+	"Private field": {
+		"prefix": [
+			"pf",
+			"field",
+			"pfield"
+		],
+		"body": [
+			"private${1| , String, int, Integer, long, Long, float, Float, double, Double, boolean, Boolean, short, Short, byte, Byte, char, Character, BigDecimal, StringBuilder, LocalDate, LocalDateTime, ZonedDateTime, LocalTime, Instant, YearMonth, Month, Year, MonthDay, DayOfWeek, Period, Duration, Date, Class<?>, Object, Object[], Consumer<>, BiConsumer<>, Predicate<>, BiPredicate<>, Function<>, BiFunction<>, Supplier<>, Optional<>, List<>, Set<>, Map<>, Collection<>, Stream<>|} ${2:fieldName};",
+			"$0"
+		],
+		"description": "A private field"
+	},
+	"Private final field": {
+		"prefix": [
+			"pff",
+			"field",
+			"pffield"
+		],
+		"body": [
+			"private final${1| , String, int, Integer, long, Long, float, Float, double, Double, boolean, Boolean, short, Short, byte, Byte, char, Character, BigDecimal, StringBuilder, LocalDate, LocalDateTime, ZonedDateTime, LocalTime, Instant, YearMonth, Month, Year, MonthDay, DayOfWeek, Period, Duration, Date, Class<?>, Object, Object[], Consumer<>, BiConsumer<>, Predicate<>, BiPredicate<>, Function<>, BiFunction<>, Supplier<>, Optional<>, List<>, Set<>, Map<>, Collection<>, Stream<>|} ${2:fieldName};",
+			"$0"
+		],
+		"description": "A private final field"
+	},
+	"Private field = value": {
+		"prefix": [
+			"pfv",
+			"field",
+			"pfieldv"
+		],
+		"body": [
+			"private${1| , String, int, Integer, long, Long, float, Float, double, Double, boolean, Boolean, short, Short, byte, Byte, char, Character, BigDecimal, StringBuilder, LocalDate, LocalDateTime, ZonedDateTime, LocalTime, Instant, YearMonth, Month, Year, MonthDay, DayOfWeek, Period, Duration, Date, Class<?>, Object, Object[], Consumer<>, BiConsumer<>, Predicate<>, BiPredicate<>, Function<>, BiFunction<>, Supplier<>, Optional<>, List<>, Set<>, Map<>, Collection<>, Stream<>|} ${2:fieldName} = ${3:defaultValue};",
+			"$0"
+		],
+		"description": "A private field with default value"
+	},
+	"Private final field = value": {
+		"prefix": [
+			"pffv",
+			"field",
+			"pffieldv"
+		],
+		"body": [
+			"private final${1| , String, int, Integer, long, Long, float, Float, double, Double, boolean, Boolean, short, Short, byte, Byte, char, Character, BigDecimal, StringBuilder, LocalDate, LocalDateTime, ZonedDateTime, LocalTime, Instant, YearMonth, Month, Year, MonthDay, DayOfWeek, Period, Duration, Date, Class<?>, Object, Object[], Consumer<>, BiConsumer<>, Predicate<>, BiPredicate<>, Function<>, BiFunction<>, Supplier<>, Optional<>, List<>, Set<>, Map<>, Collection<>, Stream<>|} ${2:fieldName} = ${3:defaultValue};",
+			"$0"
+		],
+		"description": "A private final field with value"
+	},
+	"Parameter": {
+		"prefix": [
+			"p",
+			"param"
+		],
+		"body": [
+			"${1|Void,String,int,Integer,long,Long,float,Float,double,Double,boolean,Boolean,short,Short,byte,Byte,char,Character,BigDecimal,StringBuilder,LocalDate,LocalDateTime,ZonedDateTime,LocalTime,Instant,YearMonth,Month,Year,MonthDay,DayOfWeek,Period,Duration,Date,Class<?>,Object,Object[],Consumer<>,BiConsumer<>,Predicate<>,BiPredicate<>,Function<>,BiFunction<>,Supplier<>,Optional<>,List<>,Set<>,Map<>,Collection<>,Stream<>|} ${2:paramName}$0"
+		],
+		"description": "A parameter"
+	}
+}

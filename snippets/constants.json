@@ -1,0 +1,37 @@
+{
+	"Constant": {
+		"prefix": [
+			"sf",
+			"const"
+		],
+		"body": [
+			"${1|private ,public ,protected , |}static final${2| , String, int, Integer, long, Long, float, Float, double, Double, boolean, Boolean, short, Short, byte, Byte, char, Character, BigDecimal, StringBuilder, LocalDate, LocalDateTime, ZonedDateTime, LocalTime, Instant, YearMonth, Month, Year, MonthDay, DayOfWeek, Period, Duration, Date, Class<?>, Object, Object[], Consumer<>, BiConsumer<>, Predicate<>, BiPredicate<>, Function<>, BiFunction<>, Supplier<>, Optional<>, List<>, Set<>, Map<>, Collection<>, Stream<>|} ${3:CONST_NAME} = ${4:VALUE};",
+			"$0"
+		],
+		"description": "A constant"
+	},
+	"Public constant": {
+		"prefix": [
+			"Psf",
+			"const",
+			"Pconst"
+		],
+		"body": [
+			"public static final${1| , String, int, Integer, long, Long, float, Float, double, Double, boolean, Boolean, short, Short, byte, Byte, char, Character, BigDecimal, StringBuilder, LocalDate, LocalDateTime, ZonedDateTime, LocalTime, Instant, YearMonth, Month, Year, MonthDay, DayOfWeek, Period, Duration, Date, Class<?>, Object, Object[], Consumer<>, BiConsumer<>, Predicate<>, BiPredicate<>, Function<>, BiFunction<>, Supplier<>, Optional<>, List<>, Set<>, Map<>, Collection<>, Stream<>|} ${2:CONST_NAME} = ${3:VALUE};",
+			"$0"
+		],
+		"description": "A public constant"
+	},
+	"Private constant": {
+		"prefix": [
+			"psf",
+			"const",
+			"pconst"
+		],
+		"body": [
+			"private static final${1| , String, int, Integer, long, Long, float, Float, double, Double, boolean, Boolean, short, Short, byte, Byte, char, Character, BigDecimal, StringBuilder, LocalDate, LocalDateTime, ZonedDateTime, LocalTime, Instant, YearMonth, Month, Year, MonthDay, DayOfWeek, Period, Duration, Date, Class<?>, Object, Object[], Consumer<>, BiConsumer<>, Predicate<>, BiPredicate<>, Function<>, BiFunction<>, Supplier<>, Optional<>, List<>, Set<>, Map<>, Collection<>, Stream<>|} ${2:CONST_NAME} = ${3:VALUE};",
+			"$0"
+		],
+		"description": "A private constant"
+	}
+}

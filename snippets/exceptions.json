@@ -1,0 +1,142 @@
+{
+	"Try block": {
+		"prefix": [
+			"tb",
+			"try"
+		],
+		"body": [
+			"try {",
+			"\t$0",
+			"}"
+		],
+		"description": "A try block"
+	},
+	"Try with resources block": {
+		"prefix": [
+			"twr",
+			"tryr"
+		],
+		"body": [
+			"try ($1) {",
+			"\t$0",
+			"}"
+		],
+		"description": "A try with resources block"
+	},
+	"Catch block": {
+		"prefix": [
+			"ctb",
+			"catch"
+		],
+		"body": [
+			"catch (${1:Exception} ex) {",
+			"\t$0",
+			"}"
+		],
+		"description": "A catch block"
+	},
+	"Finally block": {
+		"prefix": [
+			"fb",
+			"finally"
+		],
+		"body": [
+			"finally {",
+			"\t$0",
+			"}"
+		],
+		"description": "A finally block"
+	},
+	"Try catch": {
+		"prefix": [
+			"tc",
+			"tryc",
+			"trycatch"
+		],
+		"body": [
+			"try {",
+			"\t$TM_SELECTED_TEXT",
+			"} catch (${1:Exception} ex) {",
+			"\t$0",
+			"}"
+		],
+		"description": "A try catch block around the selected text"
+	},
+	"Try catch finally": {
+		"prefix": [
+			"tcf",
+			"trycf",
+			"trycatch"
+		],
+		"body": [
+			"try {",
+			"\t$TM_SELECTED_TEXT",
+			"} catch (${1:Exception} ex) {",
+			"\t$0",
+			"} finally {",
+			"\t",
+			"}"
+		],
+		"description": "A try catch finally block around the selected text"
+	},
+	"Throw exception": {
+		"prefix": [
+			"te",
+			"throw"
+		],
+		"body": [
+			"throw $0;"
+		],
+		"description": "Throw a exception"
+	},
+	"Throw new exception": {
+		"prefix": [
+			"tn",
+			"throw"
+		],
+		"body": [
+			"throw new ${1:Exception}($0);"
+		],
+		"description": "Throw a new exception"
+	},
+	"Throw RuntimeException": {
+		"prefix": [
+			"tr",
+			"throw"
+		],
+		"body": [
+			"throw new RuntimeException($0);"
+		],
+		"description": "Throw a new RuntimeException"
+	},
+	"Throw UnsupportedOperationException": {
+		"prefix": [
+			"tu",
+			"throw"
+		],
+		"body": [
+			"throw new UnsupportedOperationException($0);"
+		],
+		"description": "Throw a new UnsupportedOperationException"
+	},
+	"Throw IllegalArgumentException": {
+		"prefix": [
+			"tia",
+			"throw"
+		],
+		"body": [
+			"throw new IllegalArgumentException($0);"
+		],
+		"description": "Throw a new IllegalArgumentException"
+	},
+	"Throw IllegalStateException": {
+		"prefix": [
+			"tis",
+			"throw"
+		],
+		"body": [
+			"throw new IllegalStateException($0);"
+		],
+		"description": "Throw a new IllegalStateException"
+	}
+}

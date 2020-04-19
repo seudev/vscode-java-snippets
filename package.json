@@ -1,0 +1,91 @@
+{
+    "name": "vscode-java-snippets",
+    "displayName": "Seudev's VSCode Java snippets",
+    "description": "The Seudev's Visual Studio Code Java snippets",
+    "version": "0.0.1",
+    "author": "Thomás Sousa Silva <thomassousa.dev>",
+    "publisher": "Seudev",
+    "icon": "images/logo.png",
+    "homepage": "http://vscode-java-snippets.seudev.com",
+    "license": "Apache-2.0",
+    "engines": {
+        "vscode": "^1.44.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "java",
+                "path": "./snippets/basic-types.json"
+            },
+            {
+                "language": "java",
+                "path": "./snippets/conditionals.json"
+            },
+            {
+                "language": "java",
+                "path": "./snippets/constants.json"
+            },
+            {
+                "language": "java",
+                "path": "./snippets/exceptions.json"
+            },
+            {
+                "language": "java",
+                "path": "./snippets/fields.json"
+            },
+            {
+                "language": "java",
+                "path": "./snippets/keywords.json"
+            },
+            {
+                "language": "java",
+                "path": "./snippets/lambdas.json"
+            },
+            {
+                "language": "java",
+                "path": "./snippets/loops.json"
+            },
+            {
+                "language": "java",
+                "path": "./snippets/methods.json"
+            },
+            {
+                "language": "java",
+                "path": "./snippets/object.json"
+            },
+            {
+                "language": "java",
+                "path": "./snippets/prints.json"
+            },
+            {
+                "language": "java",
+                "path": "./snippets/returns.json"
+            },
+            {
+                "language": "java",
+                "path": "./snippets/variables.json"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/seudev/vscode-java-snippets.git"
+    },
+    "bugs": {
+        "url": "https://github.com/seudev/vscode-java-snippets/issues"
+    },
+    "keywords": [
+        "snippet",
+        "vscode",
+        "java",
+        "Seudev"
+    ],
+    "scripts": {
+        "update-package": "node src/PackageUpdater.js",
+        "build-readme": "node src/ReadmeBuilder.js",
+        "build": "npm run build-readme && npm run update-package"
+    }
+}

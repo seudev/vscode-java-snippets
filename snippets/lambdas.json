@@ -1,0 +1,118 @@
+{
+	"Lambda 0 arg": {
+		"prefix": "l0s",
+		"body": [
+			"() -> $0"
+		],
+		"description": "A simple lambda without arguments"
+	},
+	"Lambda block 0 arg": {
+		"prefix": "l0",
+		"body": [
+			"() -> {",
+			"\t$0",
+			"}"
+		],
+		"description": "A lambda block without arguments"
+	},
+	"Lambda 1 arg": {
+		"prefix": [
+			"l1s"
+		],
+		"body": [
+			"${1:a} -> $0"
+		],
+		"description": "A simple lambda with 1 argument"
+	},
+	"Lambda block 1 arg": {
+		"prefix": [
+			"l1"
+		],
+		"body": [
+			"${1:a} -> {",
+			"\t$0",
+			"}"
+		],
+		"description": "A lambda block with 1 argument"
+	},
+	"Lambda 2 args": {
+		"prefix": [
+			"l2s"
+		],
+		"body": [
+			"(${1:a}, ${2:b}) -> $0"
+		],
+		"description": "A simple lambda with 2 arguments"
+	},
+	"Lambda block 2 args": {
+		"prefix": [
+			"l2"
+		],
+		"body": [
+			"(${1:a}, ${2:b}) -> {",
+			"\t$0",
+			"}"
+		],
+		"description": "A lambda block with 2 arguments"
+	},
+	"Lambda 3 args": {
+		"prefix": [
+			"l3s"
+		],
+		"body": [
+			"(${1:a}, ${2:b}, ${3:c}) -> $0"
+		],
+		"description": "A simple lambda with 3 arguments"
+	},
+	"Lambda block 3 args": {
+		"prefix": [
+			"l3"
+		],
+		"body": [
+			"(${1:a}, ${2:b}, ${3:c}) -> {",
+			"\t$0",
+			"}"
+		],
+		"description": "A lambda block with 3 arguments"
+	},
+	"Lambda 4 args": {
+		"prefix": [
+			"l4s"
+		],
+		"body": [
+			"(${1:a}, ${2:b}, ${3:c}, ${4:d}) -> $0"
+		],
+		"description": "A simple lambda with 4 arguments"
+	},
+	"Lambda block 4 args": {
+		"prefix": [
+			"l4"
+		],
+		"body": [
+			"(${1:a}, ${2:b}, ${3:c}, ${4:d}) -> {",
+			"\t$0",
+			"}"
+		],
+		"description": "A lambda block with 4 arguments"
+	},
+	"Lambda 5 args": {
+		"prefix": [
+			"l5s"
+		],
+		"body": [
+			"(${1:a}, ${2:b}, ${3:c}, ${4:d}, ${5:e}) -> $0"
+		],
+		"description": "A simple lambda with 5 arguments"
+	},
+	"Lambda block 5 args": {
+		"prefix": [
+			"l5"
+		],
+		"body": [
+			"(${1:a}, ${2:b}, ${3:c}, ${4:d}, ${5:e}) -> {",
+			"\t$0",
+			"}"
+		],
+		"description": "A lambda block with 5 arguments"
+	}
+}

@@ -1,0 +1,67 @@
+{
+	"printl": {
+		"prefix": [
+			"pl",
+			"print"
+		],
+		"body": [
+			"System.out.print(\"$1\");$0"
+		],
+		"description": "Prints a String"
+	},
+	"println": {
+		"prefix": [
+			"pln",
+			"print",
+			"println"
+		],
+		"body": [
+			"System.out.println(\"$1\");$0"
+		],
+		"description": "Prints a String and then terminate the line"
+	},
+	"printf": {
+		"prefix": [
+			"pf",
+			"print",
+			"printf"
+		],
+		"body": [
+			"System.out.printf(\"${1:%s}\", ${2:value});$0"
+		],
+		"description": "Prints a formatted String"
+	},
+	"printfn": {
+		"prefix": [
+			"pfn",
+			"print",
+			"printfn"
+		],
+		"body": [
+			"System.out.printf(\"${1:%s}\\n\", ${2:value});$0"
+		],
+		"description": "Prints a formatted String and then terminate the line"
+	},
+	"printv": {
+		"prefix": [
+			"pv",
+			"print",
+			"printv"
+		],
+		"body": [
+			"System.out.println(\"${1:varName} = \" + $1);$0"
+		],
+		"description": "Prints the variable value"
+	},
+	"printfv": {
+		"prefix": [
+			"pfv",
+			"print",
+			"printfv"
+		],
+		"body": [
+			"System.out.printf(\"${1:varName} = ${2:%s\\n}\", $1);$0"
+		],
+		"description": "Prints the formatted variable value"
+	}
+}
