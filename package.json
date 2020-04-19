@@ -86,6 +86,8 @@
     "scripts": {
         "update-package": "node src/PackageUpdater.js",
         "build-readme": "node src/ReadmeBuilder.js",
-        "build": "npm run build-readme && npm run update-package"
+        "build": "npm run build-readme && npm run update-package",
+        "prepublishOnly": "npm run build",
+        "publish": "vsce publish -p $ACCESS_TOKEN"
     }
 }
