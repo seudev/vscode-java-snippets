@@ -22,3 +22,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Prints snippets
 - Returns snippets
 - Variables snippets
+
+[unreleased]: https://github.com/seudev/vscode-java-snippets/compare/v0.0.1...HEAD
+[0.0.1]: https://github.com/seudev/vscode-java-snippets/releases/tag/v0.0.1
