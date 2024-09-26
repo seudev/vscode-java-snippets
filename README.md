@@ -1,7 +1,7 @@
 # Seudev's VSCode Java snippets
 
-[![Version](https://vsmarketplacebadge.apphb.com/version/Seudev.vscode-java-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=Seudev.vscode-java-snippets)
-[![Installs](https://vsmarketplacebadge.apphb.com/installs-short/Seudev.vscode-java-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=Seudev.vscode-java-snippets)
+[![Version](https://img.shields.io/visual-studio-marketplace/v/Seudev.vscode-java-snippets)](https://marketplace.visualstudio.com/items?itemName=Seudev.vscode-java-snippets)
+[![Installs](https://img.shields.io/visual-studio-marketplace/i/Seudev.vscode-java-snippets)](https://marketplace.visualstudio.com/items?itemName=Seudev.vscode-java-snippets)
 
 The Seudev's Visual Studio Code Java snippets
 
